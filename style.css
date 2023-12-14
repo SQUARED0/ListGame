@@ -1,0 +1,116 @@
+.fixed-top-bar {
+    background-color: #F4F4F4;
+    text-align: center;
+    
+}
+
+.logo{
+    width: 100px;
+    height: 100px;
+}
+
+body::after {
+    content: "";
+    background-image: url('image/bg.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    animation: scaleAnimation 15s linear infinite alternate;
+}
+
+
+@keyframes scaleAnimation {
+    from {
+        transform: scale(0.1);
+    }
+    to {
+        transform: scale(2);
+    }
+}
+
+@keyframes scaleDiv {
+    from {
+        transform: scale(1);
+    }
+    to {
+        transform: scale(1.3);
+    }
+}
+
+
+
+
+
+
+
+
+
+.list_game{
+    display: flex; 
+    flex-direction: column; 
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+     margin-top: 100px;
+}
+
+.background{
+    background-color: silver;
+    border-radius: 5px;
+    width: 590px;
+    margin: 15px;
+}
+
+#ThomasRunner{
+    background-color: #C4D9AE;
+
+}
+
+#Kitty_Cat{
+    background-color:#525CAC;
+
+}
+
+#Hello_Fruits{
+    background-color:#67D5C2;
+
+}
+
+#Magical_Archer{
+    background-color:#736CC2;
+
+}
+
+#Flip_Remember{
+    background-color:#DA76A7;
+
+}
+
+
+
+a {
+    font-family: Arial;
+    color: #FFFFFF;
+    text-decoration: none; 
+    transition: color 0.2s; 
+    font-size: 45px;
+    line-height: 1.5;
+    display: block;
+    background-color: rgba(113, 112, 110, 0.5);
+    border-radius: 5px;
+
+}
+
+.background:hover {
+   scale: 1.07;
+}
+
+.background:active {
+    scale: 1;
+}
